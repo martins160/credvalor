@@ -1,0 +1,52 @@
+/* TEMAS DO NAVBAR */
+.navbar.tema-primario{
+/*background:#ba2222;*/
+background: #fff !important;
+padding: 3px 0 0 0!important;
+margin-bottom:0px !important;	
+}
+
+.navbar.tema-secundario{
+background:#cc530c; 
+margin-bottom:0px;	
+}
+
+.block.topo-painel{
+margin:0px; 
+padding-top:20px;
+padding-bottom:10px;
+background:#1942b2;	
+}
+
+/* FONTE DO TITULO */
+.title{
+font-family:'Arial Black', Gadget, sans-serif;	
+}
+
+/* ALINHAR IMAGEM DA ENTRADA */
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:90%;
+}
+
+.Aligner-item {
+    max-width: 80%;
+}
+
+.Aligner-item--top {
+    align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+    align-self: flex-end;
+}
+
+ /* Importando Fonte */
+@font-face {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/arial-black-bold.ttf') format('truetype');
+}
