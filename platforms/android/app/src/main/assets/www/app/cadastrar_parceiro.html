@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/materialdesignicons.css">
+        <title>CREDVALOR</title>
+    </head>
+    <body>
+       <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+         <div id="NavBarTopoHome" class="navbar no-shadow tema-primario">
+            <div class="navbar-inner">
+						<div class="left">
+                <a class="link icon-only panel-open" id="MenuPrincipal" data-panel="left" style="color: #df0c0c;">
+                    <i class="mdi mdi-menu"></i>
+                </a>
+            </div>
+            <div class="title" id="titleApp" style="justify-content: center;">
+                <a href="/destino/" class="link">
+                 <img src="img/logo-home.png" style="max-width: 100%;" height="50" alt="">
+                </a>
+            </div>
+            </div>
+            </div>
+
+                 
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+		  
+            <div id="CadastroComInternet">
+
+              <div class="item-divider" style="text-align: center; font-weight: bold; font-size: 1.3em;">
+                CADASTRAR PARCEIRO
+              </div>
+				
+              <div class="block-title">
+                <center>Algumas informações são obrigatórias:</center>
+              </div>				
+                        
+                  <div class="list no-hairlines">
+                      <ul>
+
+                        <li class="item-divider">Informações PF:</li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">CPF</div>
+                            <div class="item-input-wrap">
+                              <input type="text" id="CadcpfCadastro" maxlength="14" name="cpf" placeholder="xxx.xxx.xxx-xx">
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Nome Completo</div>
+                            <div class="item-input-wrap">
+                              <input type="text" id="CadnomeCadastro" maxlength="150" name="nome" placeholder="Seu nome completo">
+                            </div>
+                          </div>
+                        </li>
+                      <!--<li class="item-content item-input">
+                         <div class="item-inner">
+                        <div class="item-title item-label">Data de Nascimento</div>
+                        <div class="item-input-wrap">
+                          <input type="date" id="CaddatanascimentoCadastro" placeholder="Selecionar Data">
+                        </div>
+                        </div>
+                      </li>-->
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Celular (DDD + Número)</div>
+                            <div class="item-input-wrap">
+                              <input type="tel" id="CadtelefoneCadastro" maxlength="15" name="celular" placeholder="(xx) xxxxx-xxxx">
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">E-mail</div>
+                            <div class="item-input-wrap">
+                              <input type="email" id="CademailCadastro" name="email" placeholder="Informe um e-mail válido">
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="item-divider">Informações PJ:</li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">CNPJ</div>
+                            <div class="item-input-wrap">
+                              <input type="text" id="CadcnpjCadastro" maxlength="14" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx">
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Razão Social</div>
+                            <div class="item-input-wrap">
+                              <input type="text" id="CadrazaoSocial" maxlength="150" name="razao_social" placeholder="Nome da Razão Social">
+                            </div>
+                          </div>
+                        </li>
+
+
+
+                      <!--<li class="item-content item-input">
+                                <div class="item-inner">
+                                  <div class="item-title item-label">Criar Senha</div>
+                                  <div class="item-input-wrap">
+                                    <input type="password" id="CadsenhaCadastro" name="senhaCadastro" placeholder="Informe uma senha">
+                                  </div>
+                                </div>
+                              </li>
+                      <li class="item-content item-input">
+                                <div class="item-inner">
+                                  <div class="item-title item-label">Repetir Senha</div>
+                                  <div class="item-input-wrap">
+                                    <input type="password" id="CadrepeteSenhaCadastro" name="repeteSenhaCadastro" placeholder="Repita a senha">
+                                  </div>
+                                </div>
+                              </li>-->
+                      </ul>
+                    </div>
+                    
+                    <div class="block">
+                    
+                    <label class="checkbox"><input id="CadcheckPolitica" type="checkbox"><i class="icon-checkbox"></i></label> Li e concordo com a <a href="#" class="link external"> <u>Política de Privacidade</u></a>
+                    <br><br>
+                  
+                    <label class="checkbox"><input id="CadcheckTermos" type="checkbox"><i class="icon-checkbox"></i></label> Li e concordo com os <a href="#" class="link external"> <u>Termos de Uso</u></a>
+                  
+                    </div>
+                     
+                  <p class="block row">
+                      <button id="CadcadastraParceiro" class="col button button-big button-fill color-blue">FAZER CADASTRO</button>                 
+                  </p>
+
+            </div>
+		 
+          </div>
+		  
+        </div>
+      </div>
+    </div>
+		
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+        
+    </body>
+</html>
