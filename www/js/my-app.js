@@ -148,6 +148,48 @@ var app = new Framework7({
                         });
 
 
+                    // Prompt
+                    $('#pesquisa').on('click', function () {
+                        app.dialog.prompt('Informe o nome', 'LOCALIZAR', function (nome) {
+
+                    
+                            app.dialog.preloader('Pesquisando...');
+
+
+                     //BUSCANDO DADOS DA PESQUISA VIA AJAX
+                     $.ajax({
+                        type: 'POST', 
+                        data: {nome:nome, chave:'app'}, 
+                        url: 'https://criacaotatica.com.br/credvalor/app/teste/pesquisar.php', 
+                             
+                        success: function (resposta) {
+
+                            if(resposta !== 0){
+                                app.dialog.close();
+                                $("#listaTeste").html(resposta);
+                            }
+
+                            if(resposta == 0){
+                                app.dialog.alert('Houve um problema, tente novamente', 'OPSS...');                                
+                            }
+                        
+                        },
+                         
+                        error: function (erro) {
+                                app.dialog.alert('Houve um erro no servidor.', 'CONEXÃO!');                  
+                        },
+                         
+                        complete: function(){
+                         
+                        }
+                        
+                        });
+
+
+                        });
+                    });
+
+
 
 
                     //pega as informações dos inputs
